@@ -1,0 +1,153 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.16);
+	overflow: hidden;
+}
+
+#app
+{
+	border:1px solid black;
+	height: 100vh;
+}
+
+
+#controls
+{
+	width: 100%;
+	height: max-content;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.9);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+#title
+{
+	color:white;
+	font-size: 2.5rem;
+	font-style: italic; 
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-shadow: 0 0 5px red,0 0 10px red;
+}
+
+#tools
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 15%;
+}
+
+#tools i
+{
+	color: white;
+	cursor: pointer;
+	
+}
+
+#tools i.active
+{
+	background-color: cornflowerblue;
+	padding: 8px;
+	border-radius: 100%;
+}
+
+#tools
+{
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#size,#color
+{
+	display: flex;
+	color: white;
+	justify-content: space-around;
+	font-size: 1.2rem;
+	align-items: center;
+}
+
+#color
+{
+	width: 120px;
+}
+
+#btn
+{
+	display: flex;
+	justify-content: space-between;
+	width: 130px;
+}
+
+#container
+{
+	display: flex;
+	width: 0%;
+	justify-content: space-between;
+	position: relative;
+}
+
+#btn button
+{
+	background-color: white;
+	border: none;
+	border-radius: 100px;
+	outline: none;
+	font-weight: 800;
+	padding: 6px 10px;
+}
+
+
+
+@media only screen and (max-width: 600px)
+{
+	#tools,#size,#color
+	{
+		margin: 20px 0; 
+	}
+}
+
+#ham
+{
+	color: white;
+	font-size: 1.7rem;
+	display: none;
+}
+
+@media only screen and (max-width: 1000px)
+{
+	#container
+	{	
+		position: absolute;
+		bottom: -145%;
+		right: 0;
+		flex-direction: column;
+		background-color: rgba(0,0,0,0.9);
+		width: max-content;
+		padding: 10px;
+		display: none;
+	}
+
+	#tools,#size,#color
+	{
+		margin: 20px 0; 
+	}
+	#ham
+	{
+		display: block;
+	}
+
+}
