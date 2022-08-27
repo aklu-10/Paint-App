@@ -93,7 +93,7 @@ _("#pencil").onclick=()=>
 
 	_("#penciltool").classList.add("active");
 	_("#brushtool").classList.remove("active");
-	canvas.style.cursor="url('pen.png'),auto";
+	canvas.style.cursor="url('./pen.png'),auto";
 
 }
 
@@ -101,7 +101,7 @@ _("#brush").onclick=()=>
 {
 	_("#brushtool").classList.add("active");
 	_("#penciltool").classList.remove("active");
-	canvas.style.cursor="url('brush.png'),auto";
+	canvas.style.cursor="url('./brush.png'),auto";
 
 }
 
