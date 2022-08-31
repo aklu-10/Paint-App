@@ -1,3 +1,3 @@
 # Paint-App
 
-development in progres. 
+development in progress. 
